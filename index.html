@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sedona, Седона, гостиницы в Седоне">
+    <meta name="description" content="СЕДОНА — небольшой городок в Аризоне,  заслуживающий большего! Поиск гостиницы в Седоне">
+    <title>Untitled Document</title>
+    <link href="style/normalize.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="main-header">
+            <ul>
+                <li><a href="">ИНФОРМАЦИЯ</a></li>
+                <li><a href="">ФОТО И ВИДЕО</a></li>
+                <li class="logo">
+                    <a href="index.html"><img src="pictures/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
+                </li>
+                <li><a href="">КАРТА ШТАТА</a></li>
+                <li><a href="">ГОСТИНИЦЫ</a></li>
+            </ul>
+        </header>
+        <section class="main-photo">
+            <img src="pictures/canyon.jpg" alt="Каньон">
+            <div class="text-welcome"></div>
+            <div class="text-sedona">
+                <h1>Sedona</h1>
+            </div>
+            <div class="text-because"></div>
+        </section>
+        <h2 class="motto">СЕДОНА — небольшой городок в АРИЗОНЕ,  Заслуживающий большего! </h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+        <section class="content">
+            <div class="row-town-bridge">
+                <div class="advantages">
+                    <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
+                    <span>— №1 —</span>
+                    <p>СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                </div>
+                <div class="wrap-content-photo">
+                <div class="content-photo"><img src="pictures/town.jpg" width=512 heiht=256 alt="Фотография города"></div>
+                </div>
+            </div>
+            <div class="row-recommend">
+                <div class="house">
+                    <h3>Жилье</h3>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
+                <div class="food">
+                    <h3>ЕДА</h3>
+                    <p>Всегда заказывай ФИРМЕННЫЙ БУРГЕР, Вы не разочаруетесь!</p>
+                </div>
+                <div class="souvenir">
+                    <h3>СУВЕНИРЫ</h3>
+                    <p>Не только китайского, но и местного производства!</p>
+                </div>
+            </div>
+            <div class="row-town-bridge">
+               <div class="wrap-content-photo">
+                <div class="content-photo"><img src="pictures/bridge.jpg" width=512 heiht=256 alt="Фотография каньона"></div>
+                </div>
+                <div class="advantages">
+                    <h2>ТАМ ЕСТЬ Мост дьявола</h2>
+                    <span>— №2 —</span>
+                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="advantages">
+                    <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                    <span>— №3 —</span>
+                    <p>ВСЕ достопримеча-
+                        <br>тельности находятся очень близко</p>
+                </div>
+                <div class="advantages">
+                    <h2>КРАСИВАЯ ДОРОГА</h2>
+                    <span>— №4 —</span>
+                    <p>Ехать в седону из ЛАС-ВЕГАСА совсем не скучно!</p>
+                </div>
+                <div class="advantages">
+                    <h2>МАЛО ТУРИСТОВ</h2>
+                    <span>— №5 —</span>
+                    <p>Большинство едет в гранд каньон и толпится там</p>
+                </div>
+            </div>
+        </section>
+        <div class="offer">
+        <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
+        <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
+        <div class="search-header">
+            <h2>ПОИСК ГОСТИНИЦЫ В седоне</h2>
+        </div>
+        <div class="background-map">
+        <div class="search-form">
+                <form action="" method="post">
+                    <label>Дата заезда:
+                        <input type="date" name="input-date">
+                    </label>
+                    <label>Дата Выезда:
+                        <input type="date" name="output-date">
+                    </label>
+                    <label for="adults-id">Взрослые:</label>
+                        <div class="adults people">
+                           <div class="minus" onclick="minus('adults-id');">-</div>
+                            <input type="namber" name="adults" id="adults-id" placeholder="2">
+                            <div class="plus" onclick="plus('adults-id');">+</div>
+                        </div>
+                    <label for="children-id">Дети:</label>
+                        <div class="children people">
+                           <div class="minus" onclick="minus('children-id');">-</div>
+                            <input type="namber" name="children" id="children-id" placeholder="0">
+                            <div class="plus" onclick="plus('children-id');">+</div>
+                        </div>
+                    <button type="submit" name="search-send">Найти</button>
+                </form>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-visit">#visitSEDONA</div>
+            <div class=footer-social>
+                <div class="twitter"><a href="https://twitter.com">twitter</a></div>
+                <div class="facebook"><a href="https://www.facebook.com">facebook</a></div>
+                <div class="youtube"><a href="https://www.youtube.com">youtube</a></div>
+            </div>
+            <div class="copyright">
+                <a href="#">WEBSITE by</a>
+                <a href="#">FOR</a>
+            </div>
+        </footer>
+    </div>
+   
+    <script src="script/script.js"></script> 
+</body>
+
+</html>
