@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="twitter" unicode="&#xe800;" d="M456 539q0 80 57 135t137 56q85 0 139-59 60 13 122 45-20-67-83-106 53 8 110 31-39-58-97-101l0-24q0-136-60-255-60-121-190-206t-296-85q-162 0-295 86 20-2 48-2 133 0 237 81-65 1-113 40t-66 95q13-5 35-5t50 6q-65 14-108 67t-44 125q36-20 86-24-86 60-86 161 0 48 26 95 158-191 398-199-7 22-7 43z" horiz-adv-x="938" />
+
+<glyph glyph-name="ok" unicode="&#xe804;" d="M0 339q0-35 24-60l246-239q24-25 60-25 36 0 60 25l505 495q25 24 25 59t-25 58q-25 25-60 25t-60-25l-445-435-185 181q-25 24-60 24t-61-24q-24-24-24-59z" horiz-adv-x="920.4" />
+
+<glyph glyph-name="down-dir-1" unicode="&#xe805;" d="M540 587l-269-473-271 473 540 0z" horiz-adv-x="540" />
+
+<glyph glyph-name="up-dir-1" unicode="&#xe806;" d="M0 114l269 473 271-473-540 0z" horiz-adv-x="540" />
+
+<glyph glyph-name="star-2" unicode="&#xe807;" d="M2 460q11 37 101 37h225l69 207v1q19 56 44 75t49 0 43-75l1-1 68-207h226q58 0 85-17t14-47-59-63l-5-4-176-126 67-207 2-2q27-85-4-109t-105 29l-3 2-2 1-177 127-179-128-2-2q-73-52-105-29t-4 109l1 1v2l68 206-177 126-2 2-2 2q-73 52-61 90z" horiz-adv-x="931.2" />
+
+<glyph glyph-name="facebook-2" unicode="&#xe809;" d="M0 350h97v-469h193v469h130l17 161h-146v81q0 18 2 28t8 20 19 13 35 4h81v161h-129q-112 0-161-53t-49-157v-97h-97v-161z" horiz-adv-x="437.5" />
+
+<glyph glyph-name="youtube-1" unicode="&#xe80e;" d="M0-29l0 758 1000 0 0-758-1000 0z m355 157l350 220-350 219 0-439z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

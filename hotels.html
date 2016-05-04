@@ -1,17 +1,199 @@
 <!doctype html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="keywords" content=""> 
-	<meta name="description" content="">
-	<title>Untitled Document</title>
-	<link rel="stylesheet" href="style/normalize.css">
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="Amara Resort & Spa, Desert Quail Inn, Villas at Poco Diablo">
+    <meta name="description" content="Поиск жилья в Седоне. Гостиницы Седоны, мотели Седоны, апартаменты Седоны">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style-min.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/jquery-ui.min.css">
+
 </head>
+
 <body>
-	
-	
-	
+    <div class="main-container">
+        <header class="main-header">
+            <ul>
+                <li><a href="">ИНФОРМАЦИЯ</a></li>
+                <li><a href="">ФОТО И ВИДЕО</a></li>
+                <li class="logo">
+                    <a href="index.html"><img src="pictures/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
+                </li>
+                <li><a href="">КАРТА ШТАТА</a></li>
+                <li><a href="">ГОСТИНИЦЫ</a></li>
+            </ul>
+        </header>
+        <img class="canyon-hotel-page" src="pictures/canyon-hotel-page.jpg" alt="Каньон">
+        <div class="hotels-searth-container">
+            <form class="search-hotel" action="/echo" method="post">
+                <div class="search-check-block">
+                    <h3>Инфраструктура:</h3>
+                    <input type="checkbox" name="pool" id="pool-id" checked>
+                    <label for="pool-id">Бассеин</label>
+                    <input type="checkbox" name="parking" id="parking-id">
+                    <label for="parking-id">Парковка</label>
+                    <input type="checkbox" name="wi-fi" id="wi-fi-id">
+                    <label for="wi-fi-id">Wi-Fi</label>
+                </div>
+                <div class="search-check-block">
+                    <h3>Тип жилья:</h3>
+                    <input type="checkbox" name="hotel" id="hotel-id" checked>
+                    <label for="hotel-id">Гостиница</label>
+                    <input type="checkbox" name="motel" id="motel-id" checked>
+                    <label for="motel-id">Мотель</label>
+                    <input type="checkbox" name="apartments" id="apartments-id" checked>
+                    <label for="apartments-id">Апартаменты</label>
+                </div>
+                <div>
+                    <h3>Стоимость в сутки (Р):</h3>
+                    <div class="price-controls">
+                        <div>
+                            <label for="min-price-id">от</label>
+                            <input type="namber" name="min-price" id="min-price-id" value="0">
+                        </div>
+                        <div>
+                            <label for="max-price-id">до</label>
+                            <input type="namber" name="max-price" id="max-price-id" value="3000">
+                        </div>
+                    </div>
+                    <div class="range-controls" id="range-controls-id">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <section class="show-controls clear-fix">
+            <div class="column-left">Найдено: <span class="result">3</span></div>
+            <div class="column-middle">
+                <span>СОРТИРОВКА:</span>
+                <a class="sort-price" href="#">ПО ЦЕНЕ</a>
+                <a class="sort-type" href="#">ПО ТИПУ</a>
+                <a class="sort-rating" href="#">ПО РЕЙТИНГУ</a>
+            </div>
+            <div class="column-right">
+                <a class="increase" href="#"><i class="icon-up-dir-1"></i></a>
+                <a class="decrease" href="#"><i class="icon-down-dir-1"></i></a>
+            </div>
+        </section>
+        <article class="card-housing clear-fix">
+            <div class="column-left">
+                <img src="pictures/Amara.jpg" alt="Гостиница Amara">
+            </div>
+            <div class="column-middle">
+                <h2><a href="" class="name-hotel">Amara Resort & Spa</a></h2>
+                <div class="detalis">
+                    Гостиница
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="book">
+                    ОТ <span>3500</span> Р.
+                    <a href="#">Забронировать</a>
+                </div>
+            </div>
+            <div class="column-right">
+                <i class="icon-star-2"></i>
+                <i class="icon-star-2"></i>
+                <i class="icon-star-2"></i>
+                <i class="icon-star-2"></i>
+                <div class="rating">
+                    Рейтинг: <span>8,5</span>
+                </div>
+            </div>
+        </article>
+        <article class="card-housing clear-fix">
+            <div class="column-left">
+                <img src="pictures/Desert.jpg" alt="Мотель Desert">
+            </div>
+            <div class="column-middle">
+                <h2><a href="" class="name-hotel">Desert Quail Inn</a></h2>
+                <div class="detalis">
+                    Мотель
+
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="book">
+                    ОТ <span>2000</span> Р.
+
+                    <a href="#">Забронировать</a>
+                </div>
+            </div>
+            <div class="column-right">
+                <i class="icon-star-2"></i>
+                <i class="icon-star-2"></i>
+                <div class="rating">
+                    Рейтинг: <span>8,9</span>
+                </div>
+            </div>
+        </article>
+        <article class="card-housing clear-fix">
+            <div class="column-left">
+                <img src="pictures/Villas.jpg" alt="Апартаменты Villas">
+            </div>
+            <div class="column-middle">
+                <h2><a href="" class="name-hotel">Villas at Poco Diablo</a></h2>
+                <div class="detalis">
+                    Апартаменты
+
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="book">
+                    ОТ <span>3500</span> Р.
+
+                    <a href="#">Забронировать</a>
+                </div>
+            </div>
+            <div class="column-right">
+                <i class="icon-star-2"></i>
+                <i class="icon-star-2"></i>
+                <i class="icon-star-2"></i>
+                <div class="rating">
+                    Рейтинг: <span>9,2</span>
+                </div>
+            </div>
+        </article>
+
+        <footer class="main-footer">
+            <div class="footer-visit">#visitSEDONA</div>
+            <div class=footer-social>
+                <div class="twitter">
+                    <a href="https://twitter.com" class="icon-twitter"></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com" class="icon-facebook-2"></a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com" class="icon-youtube-1"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <a href="#">WEBSITE by</a>
+                <a href="#">FOR</a>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="script/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $("#range-controls-id").slider({
+                range: true,
+                min: 0,
+                max: 5000,
+                values: [0, 3000],
+                slide: function(event, ui) {
+                    $("#min-price-id").val(ui.values[0]);
+                    $("#max-price-id").val(ui.values[1]);
+                }
+            });
+            $("#min-price-id").val($("#range-controls-id").slider("values", 0));
+            $("#max-price-id").val($("#range-controls-id").slider("values", 1));
+        });
+    </script>
 </body>
+
 </html>
